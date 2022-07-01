@@ -14,6 +14,18 @@ closeMenu.addEventListener('click', () => {
 // gsap stuff overe here dont mind me 
 
 gsap.from('#slogan', {
-    x: 300,
-    duration: 1,
+    x: 500,
+    duration: .6,
 })
+gsap.from('#mini-slogan', {
+    x: 500,
+    duration: 1,
+},
+    '=-.5')
+
+
+gsap.to('#button', {
+    duration: .5,
+    opacity: 1,
+},
+    '=-.3')

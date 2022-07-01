@@ -124,6 +124,7 @@ header {
     transition: .3s;
     position: relative;
     padding-right: 25px;
+    opacity: 0;
 
 }
 
