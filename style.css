@@ -7,6 +7,8 @@
     list-style-type: none;
     scroll-behavior: smooth;
     scroll-padding-top: 7em;
+    /* outline: 1px solid black; */
+
 }
 
 body {
@@ -94,7 +96,7 @@ header {
     align-items: center;
     max-width: 1200px;
     margin: auto;
-    max-height: 100vh;
+    /* max-height: 100vh; */
     padding-top: 4em;
     z-index: -1;
 }
@@ -172,9 +174,20 @@ header {
 
 #about {
     margin-top: 12em;
-    height: 400px;
-    background-color: rgb(126, 126, 255);
+    padding-block: 1.5em;
+    background-color: rgb(195, 195, 245);
     margin-bottom: 4em;
+}
+
+#king {
+    height: 400px;
+    transform: rotate(1deg);
+}
+
+#about h3 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-left: 60px;
 }
 
 .about-container,
@@ -185,7 +198,7 @@ header {
 
 #projects {
     height: 900px;
-    width: 1200px;
+    max-width: 1200px;
     background-color: gainsboro;
     margin: auto;
     border-radius: 10px;
@@ -303,5 +316,30 @@ footer {
 
     .open-nav {
         transform: translate(0);
+    }
+
+
+    /* main section  */
+
+    .self-portrait {
+        display: none;
+
+    }
+
+    #hero h1 {
+        font-size: 20px;
+    }
+
+    #hero h3 {
+        font-size: 14px;
+        padding-top: 4em;
+    }
+
+    #hero,
+    #about,
+    #projects,
+    #contact,
+    .footer-container {
+        padding-inline: 20px;
     }
 }
