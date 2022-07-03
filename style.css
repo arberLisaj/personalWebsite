@@ -97,7 +97,7 @@ header {
     max-width: 1200px;
     margin: auto;
     /* max-height: 100vh; */
-    padding-top: 4em;
+    padding-top: 7em;
     z-index: -1;
 }
 
@@ -162,6 +162,7 @@ header {
     margin-top: 2em;
     position: relative;
     overflow: hidden;
+    opacity: 1;
 
 }
 
@@ -174,9 +175,37 @@ header {
 
 #about {
     margin-top: 12em;
-    padding-block: 1.5em;
+    padding-block: 2.5em;
     background-color: rgb(195, 195, 245);
     margin-bottom: 4em;
+
+}
+
+
+.about-container {
+
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.about-content {
+    display: grid;
+    place-content: center;
+    padding-left: 2em;
+}
+
+.about-container h2 {
+    text-align: left;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgb(4, 0, 87);
+
+}
+
+.about-container p {
+
+    font-size: 18px;
+    color: rgb(69, 51, 110);
 }
 
 #king {
@@ -185,9 +214,17 @@ header {
 }
 
 #about h3 {
+    margin-left: 60px;
+}
+
+.label {
     font-size: 2rem;
     font-weight: normal;
-    margin-left: 60px;
+}
+
+.about-content {
+    padding-left: 3em;
+    text-align: left;
 }
 
 .about-container,
@@ -204,15 +241,105 @@ header {
     border-radius: 10px;
 }
 
+#projects h3 {
+    margin-left: 60px;
+    padding-top: 1.3em;
+    padding-bottom: .5em;
+}
+
+.project {
+    background-color: red;
+}
+
+#projects-grid {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1em;
+}
+
+.prone {
+    grid-column: span 2;
+
+}
+
+
+
 #contact {
     max-width: 1200px;
-    height: 500px;
     border-radius: 10px;
     margin: auto;
     background-color: rgb(154, 154, 243);
     margin-top: 5em;
+    padding-block: 2.5em;
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 
 }
+
+#contact form {
+    padding-left: 10em;
+}
+
+input,
+label,
+textarea {
+    display: block;
+    text-align: left;
+    width: 350px;
+}
+
+#contact input {
+    height: 40px;
+    font-size: 17px;
+    padding-left: 5px;
+    outline-color: rgba(0, 0, 255, 0.423);
+}
+
+#contact label {
+    color: white;
+}
+
+#contact textarea {
+    outline-color: rgba(0, 0, 255, 0.43);
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+#contact button {
+    cursor: pointer;
+    height: 45px;
+    width: 180px;
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(55, 40, 224);
+    border: none;
+    margin-left: 1px;
+    border-radius: 4px;
+    transition: .3s;
+}
+
+#contact button:hover {
+    background-color: #7411F6;
+}
+
+
+
+#contact h3 {
+    margin-left: 90px;
+
+}
+
+#contact-img {
+    height: 350px;
+}
+
+
 
 footer {
     height: 150px;
@@ -341,5 +468,12 @@ footer {
     #contact,
     .footer-container {
         padding-inline: 20px;
+    }
+
+    .about-container {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        /* this is a comment git a */
     }
 }

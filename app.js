@@ -32,6 +32,7 @@ gsap.to('#button', {
 
 gsap.from('.self-portrait', {
     duration: 1,
-    y: -499,
+    x: -300,
+    opacity: 0,
 },
     '=--3')

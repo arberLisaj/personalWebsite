@@ -5,14 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="images/person.svg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
-    <title>arber.com 1</title>
+    <title>arber.com</title>
 </head>
 
 <body>
-    <!-- koment -->
 
     <header>
 
@@ -42,7 +41,7 @@
         <div class="content">
             <h3 id="slogan">My name is Arber and i love to learn new tech</h3>
             <h1 id="mini-slogan">I am a Front End Developer </h1>
-            <div id="button"><a href="projects/resume.pdf" download>resume <img id="resume-arrow"
+            <div id="button"><a href="projects/resume.txt" download>resume <img id="resume-arrow"
                         src="images/arrow.svg"></a>
             </div>
         </div>
@@ -55,19 +54,59 @@
 
     <section id="about">
         <div class="about-container">
-            <img id="king" src="images/king.svg">
-            <h3 class="label">about me</h3>
+            <div class="about-image">
+                <img id="king" src="images/king.svg">
+                <h3 class="label">about me</h3>
+            </div>
+
+            <div class="about-content">
+                <h2>Hi everybody my name is Arber , a front end developer that currently lives in albania</h2>
+                <p>i an 18 year old who all i dream about is to make it as a successful software engeneer . I have been
+                    studying web development
+                    for a year now and the main technologies i have learned and use are : HTML , CSS , JavaScript ,
+                    React , Figma and VS Code of course .
+                </p>
+            </div>
 
         </div>
     </section>
 
     <section id="projects">
         <h3 class="label">my projects</h3>
+
+        <div id="projects-grid">
+            <div class="project prone"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+            <div class="project"></div>
+        </div>
     </section>
 
     <section id="contact">
-        <h3 class="label">contact me</h3>
-        <img src="images/contact.svg">
+        <div class="contact-first-container">
+            <img id="contact-img" src="images/contact.svg">
+            <h3 class="label">contact me</h3>
+        </div>
+
+
+        <form action="thankyou.html">
+            <label for="name">Name : </label>
+            <input type="text">
+            <label for="email">Email : </label>
+            <input type="email">
+            <label for="description">Description:</label>
+            <textarea name="txtarea" id="textarea" cols="30" rows="10" placeholder="something amazing..."></textarea>
+            <button type="submit">submit</button>
+
+        </form>
+
     </section>
 
     <footer>
