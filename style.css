@@ -16,14 +16,18 @@ body {
     background-color: rgba(151, 151, 255, 0.119);
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 :root {
+    --black-clr: black;
+    --white-clr: white;
     --light-green: #7411F6;
 }
+
+a {
+    text-decoration: none;
+    color: var(--white-clr);
+}
+
+
 
 .header-container {
     display: flex;
@@ -52,7 +56,7 @@ a {
 
 .header-container li {
     margin-left: .8em;
-    font-size: 20px;
+    font-size: 18px;
     position: relative;
 }
 
@@ -120,7 +124,7 @@ header {
     place-content: center;
     border-radius: 4px;
     margin-top: 10px;
-    color: white;
+    color: var(--white-clr);
     cursor: pointer;
     font-weight: 18px;
     transition: .3s;
@@ -176,8 +180,11 @@ header {
 #about {
     margin-top: 12em;
     padding-block: 2.5em;
-    background-color: rgb(195, 195, 245);
-    margin-bottom: 4em;
+    /* background-color: rgb(195, 195, 245); */
+    background: url(./images/about-img.jpg);
+    background-position: 20%;
+    object-fit: fill;
+    margin-bottom: 10em;
 
 }
 
@@ -197,33 +204,34 @@ header {
 .about-container h2 {
     text-align: left;
     font-weight: normal;
-    font-size: 22px;
-    color: rgb(4, 0, 87);
+    font-size: 18px;
+    color: var(--black-clr);
 
 }
 
 .about-container p {
 
-    font-size: 18px;
-    color: rgb(69, 51, 110);
+    font-size: 16px;
+    color: rgb(56, 56, 56);
 }
 
 #king {
-    height: 400px;
+    height: 350px;
     transform: rotate(1deg);
 }
 
 #about h3 {
     margin-left: 60px;
+    color: white;
 }
 
 .label {
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: normal;
 }
 
 .about-content {
-    padding-left: 3em;
+    margin-left: 3em;
     text-align: left;
 }
 
@@ -234,11 +242,12 @@ header {
 }
 
 #projects {
-    height: 900px;
+    height: 800px;
     max-width: 1200px;
     background-color: gainsboro;
     margin: auto;
     border-radius: 10px;
+
 }
 
 #projects h3 {
@@ -248,7 +257,7 @@ header {
 }
 
 .project {
-    background-color: red;
+    background-color: blue;
 }
 
 #projects-grid {
@@ -261,11 +270,19 @@ header {
     gap: 1em;
 }
 
-.prone {
+.column-span {
     grid-column: span 2;
 
 }
 
+.row-span {
+    grid-row: span 2;
+}
+
+.span-row {
+    grid-row: span 2;
+    grid-column: span 2;
+}
 
 
 #contact {
@@ -273,16 +290,31 @@ header {
     border-radius: 10px;
     margin: auto;
     background-color: rgb(154, 154, 243);
-    margin-top: 5em;
-    padding-block: 2.5em;
-    padding-left: 1em;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    margin-top: 10em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-right: 5em;
+    padding-left: 3em;
+    margin-bottom: 8em;
+
+}
+
+.section-image {
+    background: url(./images/contact-img.jpg);
+    background-size: contain;
+    object-fit: fill;
+    background-position: left;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 500px;
+
 
 }
 
 #contact form {
-    padding-left: 10em;
+    padding-block: 4em;
+    /* padding-left: 15em; */
 }
 
 input,
@@ -301,7 +333,7 @@ textarea {
 }
 
 #contact label {
-    color: white;
+    color: var(--white-clr);
 }
 
 #contact textarea {
@@ -315,7 +347,7 @@ textarea {
     height: 45px;
     width: 180px;
     margin-top: 10px;
-    color: white;
+    color: var(--white-clr);
     font-size: 16px;
     background-color: rgb(55, 40, 224);
     border: none;
@@ -342,9 +374,40 @@ textarea {
 
 
 footer {
-    height: 150px;
+
+    width: 100%;
     background-color: var(--light-green);
     margin-top: 5em;
+}
+
+footer h4 {
+    color: var(--white-clr);
+    text-align: center;
+    padding: .5em 0 1em;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-inline: 10px;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+footer ul {
+    display: block;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+footer #copyright {
+    display: block;
+    color: var(--white-clr);
+    text-align: center;
+    padding: 10px;
 }
 
 @keyframes pop {
